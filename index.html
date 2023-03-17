@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Chaudhary | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="icon" href="/images/head-logo.png" type="image/icon type">
+</head>
+
+<body>
+
+    <!-- ========== Header ========== -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/images/Aman_Chaudhary_Resume.pdf" download>Download Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Backend Developer</p>
+                <h1>Hi👋, I'm <span>Aman</span> Chaudhary<br>from India.</h1>
+                <div class="box-icons">
+                    <a href="https://github.com/AmanChaudhary214" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/amanchaudhary214/" target="_blank"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://twitter.com/theaman214" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/tilted_._tripod/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+                <a href="/images/Aman_Chaudhary_Resume.pdf" download><button>Download Resume</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--========== About Me ==========-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/profile-full-black-bw.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Proficient Java Backend Developer along with decent knowledge of frontend skills such as HTML,
+                        CSS & JavaScript. Collaborative and problem solver with good DSA, and remote working skills.
+                        Passionate to learn new things to stay relevant and productive. Strongly interested in working
+                        for and growing with an organization where my knowledge and skills can be utilized.</p>
+                    <div class="details">
+                        <div>
+                            <h3>1200+</h3>
+                            <p>Hours of Coding</p>
+                        </div>
+                        <div>
+                            <h3>700+</h3>
+                            <p>DSA problems</p>
+                        </div>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Full Stack Web Development</span><br>Masai School, Bengaluru<br>Sep 2022 - Current
+                            </li>
+                            <li><span>Bachelor of Technology (Civil Engineering)</span><br>Hindustan College of Science
+                                & Technology, Mathura<br>Aug 2016 - Sep 2020</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AutoCAD Executive at PCS Management Pvt Ltd</span><br>Dec 2021 - Jul 2022</li>
+                            <li><span>Graduate Trainee Engineer at SP Singla Constructions Pvt Ltd</span><br>Feb 2021 -
+                                Nov 2021</li>
+                            <li><span>Free Lancing (Architectural Design)</span><br>Oct 2020 - Nov 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Skills ========== -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills & Tools | <img width="35px" src="/images/skill avatar.png" alt=""></h1>
+            <div class="skill-list">
+                <div>
+                    <h2>Languages & Framework <i class="fa-solid fa-code"></i></h2>
+                    <div>
+                        <img src="icons/java-programming-language-icon.png" alt="java" title="Java">
+                        <img src="icons/javascript-programming-language-icon.png" alt="javascript" title="JavaScript">
+                        <img src="icons/mysql-icon.png" alt="mysql" title="MySQL">
+                        <img src="icons/html-icon.png" alt="html" title="HTML5">
+                        <img src="icons/css-icon.png" alt="css" title="CSS">
+                    </div>
+                </div>
+                <div>
+                    <h2>Tech Tools <i class="fa-solid fa-code-branch"></i></h2>
+                    <div>
+                        <img src="icons/github-icon.png" alt="github" title="GitHub">
+                        <img src="icons/visual-studio-code-icon.png" alt="vscode" title="Visual Studio Code">
+                        <img src="icons/postman-icon.png" alt="postman" title="Postman">
+                        <img src="icons/notion-icon.png" alt="notion" title="Notion">
+                        <img src="icons/codepen-icon.png" alt="codepen" title="CodePen">
+                    </div>
+                </div>
+                <div>
+                    <h2>Other Design Tools <i class="fa-solid fa-compass-drafting"></i></h2>
+                    <div>
+                        <img src="icons/adobe-lightroom-icon.png" alt="lightroom" title="Lightroom">
+                        <img src="icons/autocad-icon.png" alt="autocad" title="AutoCAD">
+                        <img src="icons/canva-icon.png" alt="canva" title="Canva">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== My Projects ========== -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/SurveyHome.png">
+                    <div class="layer">
+                        <h2>SurveyHome</h2>
+                        <p>A clone of the SurveyMonkey website which is an online survey service provider that allow
+                            users to create web browser based surveys.</p>
+                        <p>Tech Stack: HTML | CSS | JavaScript</p>
+                        <div>
+                            <a href="https://github.com/AmanChaudhary214/simple-tank-2275" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://golden-baklava-528f55.netlify.app/" target="_blank"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/GroceryWala.png">
+                    <div class="layer">
+                        <h2>GroceryWala</h2>
+                        <p>A clone of the Nature's Basket website which is an onine supermarket and premium grocery
+                            store in India.</p>
+                        <p>Tech Stack: HTML | CSS | JavaScript</p>
+                        <div>
+                            <a href="https://github.com/AmanChaudhary214/curly-hobbies-5555" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://delightful-marigold-662ba5.netlify.app/index.html" target="_blank"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ========== Statistics ========== -->
+    <div id="statistics">
+        <div class="container">
+            <h1 class="sub-title">Statistics</h1>
+            <div class="github-stats1">
+                <img src="https://github-readme-stats.vercel.app/api?username=AmanChaudhary214&theme=gotham&hide_border=false&include_all_commits=true&count_private=true"
+                    alt="">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmanChaudhary214&theme=gotham&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
+                    alt="">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=AmanChaudhary214&theme=gotham&hide_border=false"
+                    alt="">
+            </div>
+            <div class="github-stats2">
+                <img src="https://github-profile-trophy.vercel.app/?username=AmanChaudhary214&theme=dark_dimmed&no-frame=false&no-bg=true&margin-w=4"
+                alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Contact ========== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2>I'm also reachable at :</h2>
+                    <div>
+                        <p><i class="fa-solid fa-paper-plane"></i> aman.chaudhary214@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 9454260173</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Vikas Nagar, Lucknow, Uttar Pradesh</p>
+                    </div>
+                    <div class="box-icons">
+                        <a href="https://github.com/AmanChaudhary214" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/amanchaudhary214/" target="_blank"><i
+                                class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://twitter.com/theaman214" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/tilted_._tripod/" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5">Your message</textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Created by Aman Chaudhary | 2023</p>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-250px";
+    }
+</script>
+
+</html>
