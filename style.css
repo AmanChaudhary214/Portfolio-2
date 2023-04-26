@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+:root {
+    --hue-color: 0;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -303,7 +310,7 @@ button:hover {
 
 .skill-list div div img {
     width: 40%;
-    margin: 25px ;
+    margin: 25px;
     transition: 0.5s;
 }
 
@@ -536,6 +543,22 @@ form button {
     margin-top: 20px;
 }
 
+/* ====== SCROLL BAR ====== */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-light);
+}
+
 /* ---------------------------------------------------------------------------------------------------------- */
 
 nav .fa-solid {
@@ -545,16 +568,21 @@ nav .fa-solid {
 /* ========== For Mobiles ========== */
 @media only screen and (max-width: 540px) {
     #header {
-        background-image: url(/images/header\ 4\ potrait.jpg);
+        height: 90vh;
+        background-image: url(/images/header\ 4.jpg);
     }
 
     .header-text {
-        margin-top: 55%;
+        margin-top: 60%;
         font-size: 16px;
     }
 
     .header-text h1 {
         font-size: 30px;
+    }
+
+    .header-text p {
+        font-size: 20px;
     }
 
     nav .fa-solid {
@@ -566,8 +594,8 @@ nav .fa-solid {
         background: rgb(200, 0, 0);
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -150px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -635,7 +663,7 @@ nav .fa-solid {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    
+
     .contact-left p {
         margin-top: 20px;
         font-size: 12px;
@@ -666,13 +694,18 @@ nav .fa-solid {
 
 /* ========== For Tablets ========== */
 @media only screen and (min-width:541px) and (max-width: 1024px) {
+    #header {
+        height: 90vh;
+        background-image: url(/images/header\ 4.jpg);
+    }
+
     .header-text {
         margin-top: 50%;
         font-size: 18px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     nav .fa-solid {
@@ -707,7 +740,7 @@ nav .fa-solid {
     .sub-title {
         font-size: 30px;
     }
-    
+
     .contact-left,
     .contact-right {
         flex-basis: 100%;
@@ -719,7 +752,7 @@ nav .fa-solid {
         font-size: 25px;
         margin-bottom: 20px;
     }
-    
+
     .contact-left p {
         margin-top: 20px;
         font-size: 14px;
